@@ -25,22 +25,22 @@ view = st.sidebar.radio('Select the visualisations',('No-Show rate by Diagnosis'
 
 
 if page == 'No-Show rate by Diagnosis':
-    st.image("noshowDiagnosis.jpg", caption= "No-show results based on Diagnosis")
+    st.image("noshowDiagnosis.jpg")
     
 if page == 'No-Show rate by Age group':
     st.image("noshowage.jpg")
 
 if page == 'No-Show rate by Gender':
-    st.image("noshowgender.jpg", caption= "No-show rate by Age group")
+    st.image("noshowgender.jpg")
 
 if page == 'Diagnosis based on Gender':
-    st.image("Diagnosisbygender.jpg", caption= "No-show rate by Age group")
+    st.image("Diagnosisbygender.jpg")
 
 if page == 'Age group distribution':
-    st.image("agedistribution.jpg", caption= "No-show rate by Age group")
+    st.image("agedistribution.jpg")
 
 if page == 'Distribution by appointments':
-    st.image("distributionappointments.jpg", caption= "No-show rate by Age group")
+    st.image("distributionappointments.jpg")
 
 
     
