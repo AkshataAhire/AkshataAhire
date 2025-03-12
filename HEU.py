@@ -12,8 +12,6 @@ Streamlit is an open source python library to create custom web apps.
 Streamlit code is integrated in the main notebook; however, it needs to be executed as a separate python script to view the Streamlit app on a browser. I have therefore created a separate Visualisation notebook.
 """
 
-!pip install streamlit
-
 import streamlit as st
 import streamlit.components.v1 as components
 
