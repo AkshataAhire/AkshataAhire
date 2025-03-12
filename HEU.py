@@ -10,34 +10,18 @@ Original file is located at
 
 Streamlit is an open source python library to create custom web apps.
 Streamlit code needs to be executed as a separate python script to view the Streamlit app on a browser.
+page = st.sidebar.selectbox('Select the visualisation to view',('No-Show rate by Diagnosis','No-Show rate by Age group','No-Show rate by Gender','Diagnosis based on Gender','Age group distribution'))
 """
 
 import streamlit as st
 import streamlit.components.v1 as components
 
 st.image("HEU.jpg")
-st.title('Visualisations for Health Economics Unit')
+st.title('Visualisations for HEU')
 
-st.sidebar.title('Choose the Visualisation')
-page = st.sidebar.selectbox('Select the visualisations',('No-Show rate by Diagnosis','No-Show rate by Age group','No-Show rate by Gender','Diagnosis based on Gender','Age group distribution'))
-
+st.sidebar.title('Results of HEU data analysis')
 view = st.sidebar.radio('Select the visualisations',('No-Show rate by Diagnosis','No-Show rate by Age group','No-Show rate by Gender','Diagnosis based on Gender','Age group distribution'))
 
-
-if page == 'No-Show rate by Diagnosis':
-    st.image("noshowDiagnosis.jpg")
-    
-if page == 'No-Show rate by Age group':
-    st.image("noshowage.jpg")
-
-if page == 'No-Show rate by Gender':
-    st.image("noshowgender.jpg")
-
-if page == 'Diagnosis based on Gender':
-    st.image("Diagnosisbygender.jpg")
-
-if page == 'Age group distribution':
-    st.image("agedistribution.jpg")
 
 if view == 'No-Show rate by Diagnosis':
     st.image("noshowDiagnosis.jpg")
