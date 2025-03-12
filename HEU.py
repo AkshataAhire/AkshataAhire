@@ -16,7 +16,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 st.title('Visualisations for Health Economics Unit')
-st.image("HEU.jpg")
+"""st.image("HEU.jpg")"""
 
 st.sidebar.title('Choose the Visualisation')
 page = st.sidebar.selectbox('Select the visualisations',('No-Show rate by Diagnosis','No-Show rate by Age group','No-show rate by Gender','Diagnosis based on Gender','Age group distribution','Distribution by Appointments'))
