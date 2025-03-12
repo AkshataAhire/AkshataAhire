@@ -27,37 +27,3 @@ if option1=='No-Show rate by Diagnosis':
     source_code = HtmlFilesyn.read()
     components.html(source_code, height = 600, width = 700)
     
-"""if option1=='Tradeoff Network Visulaisation':
-    HtmlFilesyn = open("TradeoffGraph.html",'r',encoding='utf-8')
-    source_code = HtmlFilesyn.read()
-    components.html(source_code, height = 1500, width = 1000)
-    
-if option1=='BetweennessCentralityTop5 - Synergy':
-    HtmlFilesyn = open("BetweennessCentralitySynergy.html",'r',encoding='utf-8')
-    source_code = HtmlFilesyn.read()
-    components.html(source_code, height = 1500, width = 1000)
-    
-if option1=='BetweennessCentralityTop5 - Tradeoff':
-    HtmlFilesyn = open("BetweennessCentralityTradeoff.html",'r',encoding='utf-8')
-    source_code = HtmlFilesyn.read()
-    components.html(source_code, height = 1500, width = 1000)    
-    
-if option1=='EigenvectorCentralityTop5 - Synergy':
-    HtmlFilesyn = open("EigenVectorSynergyTop5.html",'r',encoding='utf-8')
-    source_code = HtmlFilesyn.read()
-    components.html(source_code, height = 1500, width = 1000)
-    
-if option1=='EigenvectorCentralityTop5 - Tradeoff':
-    HtmlFilesyn = open("EigenVectorTradeoffTop5.html",'r',encoding='utf-8')
-    source_code = HtmlFilesyn.read()
-    components.html(source_code, height = 1500, width = 1000)
-    
-if option1=='CentralityDegree - Synergy':
-    HtmlFilesyn = open("CentralityDegreeSynergy.html",'r',encoding='utf-8')
-    source_code = HtmlFilesyn.read()
-    components.html(source_code, height = 1500, width = 1000)
-    
-if option1=='CentralityDegree - Tradeoff':
-    HtmlFilesyn = open("CentralityDegreeTradeoff.html",'r',encoding='utf-8')
-    source_code = HtmlFilesyn.read()
-    components.html(source_code, height = 1500, width = 1000)
