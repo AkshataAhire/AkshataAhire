@@ -18,9 +18,9 @@ import streamlit.components.v1 as components
 st.title('Visualisations for Health Economics Unit')
 
 st.sidebar.title('Choose the Visualisation')
-page = st.sidebar.selectbox('Select the visualisations',('No-Show rate by Diagnosis','No-Show rate by Age group','No-show rate by Gender','Diagnosis based on Gender','Age group distribution','Distribution by Appointments'))
+page = st.sidebar.selectbox('Select the visualisations',('No-Show rate by Diagnosis','No-Show rate by Age group','No-show rate by Gender','Diagnosis based on Gender','Age group distribution'))
 
-view = st.sidebar.radio('Select the visualisations',('No-Show rate by Diagnosis','No-Show rate by Age group','No-show rate by Gender','Diagnosis based on Gender','Age group distribution','Distribution by Appointments'))
+view = st.sidebar.radio('Select the visualisations',('No-Show rate by Diagnosis','No-Show rate by Age group','No-show rate by Gender','Diagnosis based on Gender','Age group distribution'))
 
 
 if page == 'No-Show rate by Diagnosis':
@@ -37,9 +37,6 @@ if page == 'Diagnosis based on Gender':
 
 if page == 'Age group distribution':
     st.image("agedistribution.jpg")
-
-if page == 'Distribution by appointments':
-    st.image("distributionappointments.jpg")
 
 
     
