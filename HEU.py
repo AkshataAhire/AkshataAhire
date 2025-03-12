@@ -19,16 +19,13 @@ st.title('Visualisations for Health Economics Unit')
 st.image("noshowDiagnosis.jpg", caption="Noshow results based on Diagnosis")
 
 st.sidebar.title('Choose the Visualisation')
-option1=st.sidebar.selectbox('Select the visualisations',('No-Show rate by Diagnosis','No-Show rate by Age group','No-show rate by Gender','Diagnosis based on Gender','Age group distribution','Distribution by Appointments'))
+page = st.sidebar.selectbox('Select the visualisations',('No-Show rate by Diagnosis','No-Show rate by Age group','No-show rate by Gender','Diagnosis based on Gender','Age group distribution','Distribution by Appointments'))
+page = st.sidebar.radio('Select the visualisations',('No-Show rate by Diagnosis','No-Show rate by Age group','No-show rate by Gender','Diagnosis based on Gender','Age group distribution','Distribution by Appointments'))
 
 
-if option1=='No-Show rate by Diagnosis':
-    file = open("noshowDiagnosis.html",'r',encoding='utf-8')
-    source_code = file.read()
-    components.html(source_code, height = 600, width = 700)
-
-if option1=='No-Show rate by Age group':
-    file = open("noshowDiagnosis.html",'r',encoding='utf-8')
-    source_code = file.read()
-    components.html(source_code, height = 600, width = 700)
+if page == 'No-Show rate by Diagnosis':
+    st.image("noshowDiagnosis.jpg", caption= "No-show results based on Diagnosis")
+    
+if page == 'No-Show rate by Age group':
+    st.image("noshowDiagnosis.jpg", caption= "No-show rate by Age group")
     
