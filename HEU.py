@@ -30,7 +30,7 @@ if page == 'No-Show rate by Age group':
     st.image("noshowage.jpg")
 
 if page == 'No-Show rate by Gender':
-    st.image("noshowgender.jpg")
+    st.image("nogender.jpg")
 
 if page == 'Diagnosis based on Gender':
     st.image("Diagnosisbygender.jpg")
