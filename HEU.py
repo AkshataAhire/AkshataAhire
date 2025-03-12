@@ -15,8 +15,8 @@ Streamlit code needs to be executed as a separate python script to view the Stre
 import streamlit as st
 import streamlit.components.v1 as components
 
-st.title('Visualisations for Health Economics Unit')
 st.image("HEU.jpg")
+st.title('Visualisations for Health Economics Unit')
 
 st.sidebar.title('Choose the Visualisation')
 page = st.sidebar.selectbox('Select the visualisations',('No-Show rate by Diagnosis','No-Show rate by Age group','No-Show rate by Gender','Diagnosis based on Gender','Age group distribution'))
