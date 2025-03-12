@@ -25,18 +25,23 @@ view = st.sidebar.radio('Select the visualisation to view',('No-Show rate by Dia
 
 if view == 'No-Show rate by Diagnosis':
     st.image("noshowDiagnosis.jpg")
+    st.markdown("***Analysis:*** The population affected by Asthma has more no-show rates compared to Diabetes and Hypertension.")
     
 if view == 'No-Show rate by Age group':
     st.image("noshowage.jpg")
+    st.markdown("***Analysis:***.")
 
 if view == 'No-Show rate by Gender':
     st.image("noshowgender.jpg")
+    st.markdown("***Analysis:***.")
 
 if view == 'Diagnosis based on Gender':
     st.image("Diagnosisbygender.jpg")
+    st.markdown("***Analysis:***.")
 
 if view == 'Age group distribution':
     st.image("agedistribution.jpg")
+    st.markdown("***Analysis:***.")
 
 
     
