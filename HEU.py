@@ -20,7 +20,7 @@ st.image("HEU.jpg")
 st.header('Visualisations for HEU')
 
 st.sidebar.title('HEU data analysis')
-view = st.sidebar.radio('Select the visualisation to view',('No-Show rate by Diagnosis','No-Show rate by Age group','No-Show rate by Gender','Diagnosis based on Gender','Age group distribution'))
+view = st.sidebar.radio('Select the visualisation to view',('No-Show rate by Diagnosis','No-Show rate by Age group','No-Show rate by Gender','Diagnosis based on Gender','Age group distribution','SQL Database design'))
 
 
 if view == 'No-Show rate by Diagnosis':
@@ -43,5 +43,7 @@ if view == 'Age group distribution':
     st.image("agedistribution.jpg")
     st.markdown("***Analysis:*** The histogram displays the age distribution of a population, with frequencies varying across different age groups. Peaks around ages 45-50 and 75-80 suggest higher concentrations in these ranges.")
 
+if view == 'SQL Database design':
+    st.image("sql.jpg")
 
     
