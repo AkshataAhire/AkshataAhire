@@ -17,7 +17,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 st.image("HEU.jpg")
-st.title('Visualisations for HEU')
+st.header('Visualisations for HEU')
 
 st.sidebar.title('HEU data analysis')
 view = st.sidebar.radio('Select the visualisation to view',('No-Show rate by Diagnosis','No-Show rate by Age group','No-Show rate by Gender','Diagnosis based on Gender','Age group distribution'))
