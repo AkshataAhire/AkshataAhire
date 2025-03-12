@@ -27,7 +27,7 @@ if option1=='No-Show rate by Diagnosis':
     source_code = file.read()
     components.html(source_code, height = 600, width = 700)
 
-if option2=='No-Show rate by Age group':
+if option1=='No-Show rate by Age group':
     file = open("noshowDiagnosis.html",'r',encoding='utf-8')
     source_code = file.read()
     components.html(source_code, height = 600, width = 700)
