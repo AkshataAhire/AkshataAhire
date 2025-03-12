@@ -15,5 +15,5 @@ Streamlit code is integrated in the main notebook; however, it needs to be execu
 import streamlit as st
 import streamlit.components.v1 as components
 
-st.title('Visualisations for NHS Midlands and Lancashire')
-
+st.title('Visualisations for Health Economics Unit')
+st.image("noshowDiagnosis.jpg", caption="Noshow results based on Diagnosis")
