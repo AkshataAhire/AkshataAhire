@@ -25,23 +25,23 @@ view = st.sidebar.radio('Select the visualisation to view',('No-Show rate by Dia
 
 if view == 'No-Show rate by Diagnosis':
     st.image("noshowDiagnosis.jpg")
-    st.markdown("***Analysis:*** The population affected by Asthma has more no-show rates compared to population suffering from Diabetes and Hypertension.")
+    st.markdown("***Analysis:*** The population affected by Asthma has more no-show rates compared to the population suffering from Diabetes and Hypertension.")
     
 if view == 'No-Show rate by Age group':
     st.image("noshowage.jpg")
-    st.markdown("***Analysis:*** The population in the age group of 19-35 has the highest no-show rate, possibly the youngsters are not really worried about health at that age and people from 66+ age group might have mobility issues to have 50% no-show rates.")
+    st.markdown("***Analysis:*** The 19-35 age group exhibits the highest no-show rate, likely due to lower health concerns at a younger age. Additionally, individuals aged 66+ may face mobility challenges, contributing to a 50% no-show rate.")
 
 if view == 'No-Show rate by Gender':
     st.image("noshowgender.jpg")
-    st.markdown("***Analysis:***.")
+    st.markdown("***Analysis:***. Males have a higher no-show rate compared to females, possibly due to differences in health-seeking behavior and prioritisation of medical appointments.")
 
 if view == 'Diagnosis based on Gender':
     st.image("Diagnosisbygender.jpg")
-    st.markdown("***Analysis:***.")
+    st.markdown("***Analysis:*** Males have slightly higher cases of Asthma and Diabetes, while females show a significantly higher count for Hypertension. This suggests potential gender-based differences in health conditions.")
 
 if view == 'Age group distribution':
     st.image("agedistribution.jpg")
-    st.markdown("***Analysis:***.")
+    st.markdown("***Analysis:*** The histogram displays the age distribution of a population, with frequencies varying across different age groups. Peaks around ages 45-50 and 75-80 suggest higher concentrations in these ranges.")
 
 
     
