@@ -19,11 +19,16 @@ st.title('Visualisations for Health Economics Unit')
 st.image("noshowDiagnosis.jpg", caption="Noshow results based on Diagnosis")
 
 st.sidebar.title('Choose the Visualisation')
-option1=st.sidebar.selectbox('Select the graph',('No-Show rate by Diagnosis','No-Show rate by Age group','No-show rate by Gender','Diagnosis based on Gender','Age group distribution','Distribution by Appointments over time'))
+option1=st.sidebar.selectbox('Select the visualisations',('No-Show rate by Diagnosis','No-Show rate by Age group','No-show rate by Gender','Diagnosis based on Gender','Age group distribution','Distribution by Appointments'))
 
 
 if option1=='No-Show rate by Diagnosis':
-    HtmlFilesyn = open("noshowDiagnosis.html",'r',encoding='utf-8')
-    source_code = HtmlFilesyn.read()
+    file = open("noshowDiagnosis.html",'r',encoding='utf-8')
+    source_code = file.read()
+    components.html(source_code, height = 600, width = 700)
+
+if option2=='No-Show rate by Age group':
+    file = open("noshowDiagnosis.html",'r',encoding='utf-8')
+    source_code = file.read()
     components.html(source_code, height = 600, width = 700)
     
