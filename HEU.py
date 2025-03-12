@@ -9,7 +9,7 @@ Original file is located at
 ## Visualisations using Streamlit
 
 Streamlit is an open source python library to create custom web apps.
-Streamlit code is integrated in the main notebook; however, it needs to be executed as a separate python script to view the Streamlit app on a browser. I have therefore created a separate Visualisation notebook.
+Streamlit code needs to be executed as a separate python script to view the Streamlit app on a browser.
 """
 
 import streamlit as st
@@ -20,12 +20,27 @@ st.image("noshowDiagnosis.jpg", caption="Noshow results based on Diagnosis")
 
 st.sidebar.title('Choose the Visualisation')
 page = st.sidebar.selectbox('Select the visualisations',('No-Show rate by Diagnosis','No-Show rate by Age group','No-show rate by Gender','Diagnosis based on Gender','Age group distribution','Distribution by Appointments'))
-page = st.sidebar.radio('Select the visualisations',('No-Show rate by Diagnosis','No-Show rate by Age group','No-show rate by Gender','Diagnosis based on Gender','Age group distribution','Distribution by Appointments'))
+
+view = st.sidebar.radio('Select the visualisations',('No-Show rate by Diagnosis','No-Show rate by Age group','No-show rate by Gender','Diagnosis based on Gender','Age group distribution','Distribution by Appointments'))
 
 
 if page == 'No-Show rate by Diagnosis':
     st.image("noshowDiagnosis.jpg", caption= "No-show results based on Diagnosis")
     
 if page == 'No-Show rate by Age group':
-    st.image("noshowDiagnosis.jpg", caption= "No-show rate by Age group")
+    st.image("noshowage.jpg")
+
+if page == 'No-Show rate by Gender':
+    st.image("noshowgender.jpg", caption= "No-show rate by Age group")
+
+if page == 'Diagnosis based on Gender':
+    st.image("Diagnosisbygender.jpg", caption= "No-show rate by Age group")
+
+if page == 'Age group distribution':
+    st.image("agedistribution.jpg", caption= "No-show rate by Age group")
+
+if page == 'Distribution by appointments':
+    st.image("distributionappointments.jpg", caption= "No-show rate by Age group")
+
+
     
